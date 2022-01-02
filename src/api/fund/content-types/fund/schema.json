@@ -64,6 +64,12 @@
       "relation": "manyToMany",
       "target": "api::authorized-participant.authorized-participant",
       "inversedBy": "funds"
+    },
+    "fund_analyses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::fund-analysis.fund-analysis",
+      "mappedBy": "fund"
     }
   }
 }
