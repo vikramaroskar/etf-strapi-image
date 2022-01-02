@@ -4,7 +4,8 @@
   "info": {
     "singularName": "fund",
     "pluralName": "funds",
-    "displayName": "Fund"
+    "displayName": "Fund",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,6 +17,53 @@
     },
     "description": {
       "type": "string"
+    },
+    "fundmanager": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "open",
+        "closed"
+      ]
+    },
+    "allotmentDate": {
+      "type": "date"
+    },
+    "benchmarkIndex": {
+      "type": "string"
+    },
+    "minimumInvestmentAmount": {
+      "type": "decimal"
+    },
+    "expenseRatio": {
+      "type": "biginteger"
+    },
+    "netAum": {
+      "type": "decimal"
+    },
+    "listing": {
+      "type": "enumeration",
+      "enum": [
+        "nse",
+        "bse"
+      ]
+    },
+    "creationUnitSize": {
+      "type": "integer"
+    },
+    "symbols": {
+      "type": "richtext"
+    },
+    "allotmentPrice": {
+      "type": "decimal"
+    },
+    "authorized_participants": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::authorized-participant.authorized-participant",
+      "inversedBy": "funds"
     }
   }
 }

@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "authorized_participants",
+  "info": {
+    "singularName": "authorized-participant",
+    "pluralName": "authorized-participants",
+    "displayName": "Authorized Participant"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "funds": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::fund.fund",
+      "inversedBy": "authorized_participants"
+    }
+  }
+}
