@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "indices",
+  "info": {
+    "singularName": "index",
+    "pluralName": "indices",
+    "displayName": "index"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "calculation": {
+      "type": "richtext"
+    },
+    "scripSelectionCriteria": {
+      "type": "richtext"
+    },
+    "listing": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::listing.listing",
+      "inversedBy": "indices"
+    }
+  }
+}

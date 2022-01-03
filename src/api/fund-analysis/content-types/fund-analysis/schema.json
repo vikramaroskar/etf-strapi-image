@@ -41,6 +41,12 @@
     },
     "macaulayDuration": {
       "type": "decimal"
+    },
+    "standardDuration": {
+      "type": "decimal"
+    },
+    "riskFreeReturn": {
+      "type": "decimal"
     }
   }
 }

@@ -43,13 +43,6 @@
     "netAum": {
       "type": "decimal"
     },
-    "listing": {
-      "type": "enumeration",
-      "enum": [
-        "nse",
-        "bse"
-      ]
-    },
     "creationUnitSize": {
       "type": "integer"
     },
@@ -70,6 +63,12 @@
       "relation": "oneToMany",
       "target": "api::fund-analysis.fund-analysis",
       "mappedBy": "fund"
+    },
+    "listings": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::listing.listing",
+      "mappedBy": "funds"
     }
   }
 }

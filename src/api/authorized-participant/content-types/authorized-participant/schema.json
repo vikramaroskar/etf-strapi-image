@@ -18,7 +18,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::fund.fund",
-      "inversedBy": "authorized_participants"
+      "mappedBy": "authorized_participants"
     }
   }
 }
