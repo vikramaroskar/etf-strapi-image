@@ -18,7 +18,7 @@
     "description": {
       "type": "string"
     },
-    "fundmanager": {
+    "fundManager": {
       "type": "string"
     },
     "type": {
@@ -38,7 +38,7 @@
       "type": "decimal"
     },
     "expenseRatio": {
-      "type": "biginteger"
+      "type": "decimal"
     },
     "netAum": {
       "type": "decimal"
