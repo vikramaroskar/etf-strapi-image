@@ -58,17 +58,17 @@
       "target": "api::authorized-participant.authorized-participant",
       "inversedBy": "funds"
     },
-    "fund_analyses": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::fund-analysis.fund-analysis",
-      "mappedBy": "fund"
-    },
     "listings": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::listing.listing",
       "mappedBy": "funds"
+    },
+    "fund_analysis": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::fund-analysis.fund-analysis",
+      "mappedBy": "fund"
     }
   }
 }

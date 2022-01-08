@@ -14,9 +14,9 @@
   "attributes": {
     "fund": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToOne",
       "target": "api::fund.fund",
-      "inversedBy": "fund_analyses"
+      "inversedBy": "fund_analysis"
     },
     "sharpeRatio": {
       "type": "decimal"
