@@ -37,9 +37,6 @@
     "minimumInvestmentAmount": {
       "type": "decimal"
     },
-    "expenseRatio": {
-      "type": "decimal"
-    },
     "netAum": {
       "type": "decimal"
     },
@@ -69,6 +66,48 @@
       "relation": "oneToOne",
       "target": "api::fund-analysis.fund-analysis",
       "mappedBy": "fund"
+    },
+    "fundHouse": {
+      "type": "string"
+    },
+    "fundActiveSeries": {
+      "type": "string"
+    },
+    "fundDebtSeries": {
+      "type": "string"
+    },
+    "isFNOSec": {
+      "type": "boolean"
+    },
+    "isCASec": {
+      "type": "boolean"
+    },
+    "isSLBSec": {
+      "type": "boolean"
+    },
+    "isDebtSec": {
+      "type": "boolean"
+    },
+    "isSuspended": {
+      "type": "boolean"
+    },
+    "isETFSec": {
+      "type": "boolean"
+    },
+    "isDelisted": {
+      "type": "boolean"
+    },
+    "isTopTen": {
+      "type": "boolean"
+    },
+    "identifier": {
+      "type": "boolean"
+    },
+    "isin": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
     }
   }
 }

@@ -47,6 +47,9 @@
     },
     "riskFreeReturn": {
       "type": "decimal"
+    },
+    "expenseRatio": {
+      "type": "decimal"
     }
   }
 }
